@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "equinox";
+  src: url('../fonts/EquinoxRegular.otf');
+}
+
+/**********  GENERAL ELEMENTS STYLING  *************/
+
+body {
+  background-image: url(../images/galaxy.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+nav p {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  font-size: 1.2em;
+  padding-left: 20px;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: "equinox";
+  font-size: 1.5em;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  background-color: rgba(13, 41, 88, 0.8);
+  width: 40vw;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+section a {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+section a:hover {
+  text-decoration : underline;
+}
+
+section p {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  padding-bottom: 10px;
+  font-size: 0.9em;
+}
+
+span {
+  display: none;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  font-size: 0.7em;
+  margin-bottom: 23px;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ color: red;
+ width: 40vw;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px 10px;
+  background-color: rgba(13, 41, 88, 0.8);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input:focus {
+     outline:none;
+     border:1px solid grey;
+     color: white;
+ }
+
+textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px 0 0 10px;
+  background-color: rgba(13, 41, 88, 0.8);
+  border: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-family: 'helvetica neue';
+}
+
+textarea:focus {
+   outline: none;
+   border:1px solid grey;
+   color: white;
+ }
+
+ ::placeholder {
+   font-size: 1.2em;
+   font-weight: bold;
+   font-family: 'helvetica neue', 'helvetica', sans-serif;
+   text-transform: lowercase;
+ }
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  border: none;
+  font-size: 0.7;
+  width: 70%;
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  padding: 10px 80px;
+  border-radius: 45px;
+  background-image: linear-gradient(to bottom, #FFFFFF, #D8E5EA, #005676);
+  margin-bottom: 100px;
+}
+
+.btn:visited {
+  border: none;
+  color: black;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: 0.2s;
+}
+
+.btn:active {
+  border: 1px solid white;
+  background-color: #005676;
+}
+
+.btn:focus {
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to bottom, #FFFFFF, #D8E5EA, #013042);
+  color: black;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+
+/**********  MOBILE  *************/
+
+@media only screen and (max-width: 700px) {
+
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 0.9em;
+    padding-left: 7px;
+  }
+
+  nav p {
+    font-size: 1em;
+    padding-left: 7px;
+  }
+
+  section {
+    width: 70%;
+  }
+
+  form {
+    width: 80%;
+  }
+}

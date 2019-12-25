@@ -1,0 +1,162 @@
+@font-face {
+  font-family: "equinox";
+  src: url('../fonts/EquinoxRegular.otf');
+}
+
+/**********  GENERAL ELEMENTS STYLING  *************/
+
+body {
+  background-image: url(../images/galaxy.jpg);
+  background-repeat: repeat;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main p {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  padding-bottom: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  font-size: 0.8em;
+  font-weight: normal;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+nav p {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  font-size: 1.2em;
+  padding-left: 20px;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-family: "equinox";
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+h2 {
+  color: white;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.1em;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.about-text {
+  margin-bottom: 60px;
+  font-weight: normal;
+}
+
+.upcoming-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.upcoming-box p {
+  width: 60%;
+}
+
+.launch-box {
+  display: flex;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgba(13, 41, 88, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  flex-direction: column;
+  width: 70%;
+  align-self: center;
+  margin-bottom: 70px;
+}
+
+.launch-box p {
+  margin: 10px 0;
+  width: 70%;
+}
+
+.upcoming-box div {
+  text-align: left;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/**********  MOBILE  *************/
+
+@media only screen and (max-width: 700px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 0.9em;
+    padding-left: 7px;
+  }
+
+  nav p {
+    font-size: 1em;
+    padding-left: 7px;
+  }
+
+  .upcoming-box {
+    width: 80vw;
+    padding: 0;
+  }
+
+  .upcoming-box p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .launch-box {
+    width: 70vw;
+  }
+
+  .launch-box p {
+    margin: 10px 0;
+    width: 90%;
+  }
+}
